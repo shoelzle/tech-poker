@@ -1,10 +1,7 @@
 package com.github.leonard84.techpoker.services
 
-
-import javax.inject.Provider
-
 import com.github.leonard84.techpoker.config.PokerProperties
-
+import jakarta.inject.Provider
 import spock.lang.Specification
 import spock.lang.Subject
 

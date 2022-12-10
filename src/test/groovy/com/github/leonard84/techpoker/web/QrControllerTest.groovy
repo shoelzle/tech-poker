@@ -1,9 +1,9 @@
 package com.github.leonard84.techpoker.web
 
+import jakarta.inject.Inject
+
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content
-
-import javax.inject.Inject
 
 import com.github.leonard84.techpoker.config.SpringMobileConfiguration
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
