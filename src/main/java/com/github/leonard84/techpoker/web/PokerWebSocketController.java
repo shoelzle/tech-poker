@@ -6,8 +6,6 @@ import java.util.Locale;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
-
 import com.github.leonard84.techpoker.data.Choice;
 import com.github.leonard84.techpoker.data.GameId;
 import com.github.leonard84.techpoker.data.PlayerId;
@@ -23,6 +21,7 @@ import com.github.leonard84.techpoker.messages.SessionMessage;
 import com.github.leonard84.techpoker.messages.VoteMessage;
 import com.github.leonard84.techpoker.services.GameService;
 import com.github.leonard84.techpoker.services.GameSession;
+import jakarta.inject.Inject;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.messaging.handler.annotation.MessageMapping;

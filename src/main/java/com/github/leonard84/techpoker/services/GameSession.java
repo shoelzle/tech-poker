@@ -13,8 +13,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import javax.inject.Inject;
-
 import com.github.leonard84.techpoker.data.Choice;
 import com.github.leonard84.techpoker.data.ChoiceResult;
 import com.github.leonard84.techpoker.data.GameId;
@@ -24,6 +22,7 @@ import com.github.leonard84.techpoker.data.PlayerId;
 import com.github.leonard84.techpoker.data.PlayerVote;
 import com.github.leonard84.techpoker.data.Result;
 import com.github.leonard84.techpoker.exceptions.DuplicatedPlayerException;
+import jakarta.inject.Inject;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.util.Assert;
 

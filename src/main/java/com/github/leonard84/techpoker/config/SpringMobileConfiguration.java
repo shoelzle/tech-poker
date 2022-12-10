@@ -88,10 +88,12 @@ public class SpringMobileConfiguration {
             this.deviceHandlerMethodArgumentResolver = deviceHandlerMethodArgumentResolver;
         }
 
+        @Override
         public void addInterceptors(InterceptorRegistry registry) {
             registry.addInterceptor(this.deviceResolverHandlerInterceptor);
         }
 
+        @Override
         public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
             argumentResolvers.add(this.deviceHandlerMethodArgumentResolver);
         }

@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
-import javax.validation.constraints.Size;
-
 import com.github.leonard84.techpoker.config.PokerProperties;
 import com.github.leonard84.techpoker.data.Choice;
 import com.github.leonard84.techpoker.data.GameId;
@@ -15,6 +12,8 @@ import com.github.leonard84.techpoker.data.PlayerId;
 import com.github.leonard84.techpoker.exceptions.GameNotFoundException;
 import com.github.leonard84.techpoker.services.GameService;
 import com.github.leonard84.techpoker.services.GameSession;
+
+import jakarta.inject.Inject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +22,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.view.RedirectView;
+
+import javax.validation.constraints.Size;
 
 @Controller
 public class PokerController {
